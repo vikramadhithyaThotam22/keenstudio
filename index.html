@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keenstudio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c993345b5e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+    <nav>
+        <img src="Images/logo02-removebg-preview.png" alt="" class="logo">
+    
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact us</a></li>
+            
+        </ul>
+       <img src="Images/moon.png" id="icon">
+    </nav>
+    <div class="header">
+        <h1>Keenstudio</h1>
+        <p>Welcome to Keenstudio! We specialize in creating beautiful and functional websites.</p>
+         
+ 
+     </div>
+</div>
+</div>
+<!---------- about-------------->
+
+<div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+        <img src="Images/logo02-removebg-preview.png" alt="">
+        </div>
+        <div class="about-col-2">
+        <h1 class="sub-title">About us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, accusamus hic nostrum, ipsam sapiente aspernatur nihil illo eveniet deleniti debitis, fugit perferendis illum asperiores alias laboriosam libero temporibus. Officia, quidem.</p>
+        <div class="tab-tiles">
+            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li>
+                    <span>UI?UX</span><br> Desgin web app interface
+                </li>
+                <li>
+                    <span>Web Development</span><br> Desgin web app interface
+                </li>
+                <li>
+                    <span>App Development</span><br> Desgin web app interface
+                </li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li>
+                    <span>Btech.Bioinformatics</span><br> Desgin web app interface
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+<!-- Services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Wed Desgin</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum porro quisquam enim. Inventore dolore qui numquam recusandae perspiciatis perferendis ea animi dignissimos illum rerum optio explicabo maxime ipsum, iusto quasi.</p>
+                 <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>UI/UX Desgin</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum porro quisquam enim. Inventore dolore qui numquam recusandae perspiciatis perferendis ea animi dignissimos illum rerum optio explicabo maxime ipsum, iusto quasi.</p>
+                 <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>app Desgin</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum porro quisquam enim. Inventore dolore qui numquam recusandae perspiciatis perferendis ea animi dignissimos illum rerum optio explicabo maxime ipsum, iusto quasi.</p>
+                 <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p> <i class="fa-regular fa-envelope"></i> keenstudio44@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 8096320035, +91 8500923579</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/keenstudio22?igsh=MWMyYXhoZmUwdzlybg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://wa.me/+918500923579"><i class="fa-brands fa-whatsapp"></i></a>
+
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                   <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                   <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; Keenstudio 2024</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+    
+    
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby4biChKqifvczN7yoMdHRIaUjHf2D2wUJ_d6_Ip3GalSXTBxObOJz0BhKaE8Rlo17W/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Thank you for your Response"
+            setTimeout(function(){
+                msg.innerHTML=" "
+
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
