@@ -143,9 +143,8 @@ nav .logo{
 
 }
 .tab-contents ul li span{
-    color:brown;
+    color: #f00;
     font-size: 14px;
-    font-weight: bold;
 
 }
 .tab-contents{
@@ -213,7 +212,7 @@ nav .logo{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: white;
+    color: black;
     margin-right: 15px;
     font-size: 15px;
 }
